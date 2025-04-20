@@ -1,0 +1,30 @@
+:: StoryStylesheet [stylesheet]
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+body {
+  font-family: "Jura", sans-serif;
+}
+
+#mid {
+ text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+@-webkit-keyframes shudder {
+	50% {
+		-webkit-transform: translateX(0.05em);
+		transform: translateX(0.05em)
+	}
+}
+@keyframes shudder {
+	50% {
+		-webkit-transform: translateX(0.05em);
+		transform: translateX(0.05em)
+	}
+}
+.shudder {
+	-webkit-animation: shudder linear 0.1s 0s infinite;
+	animation: shudder linear 0.1s 0s infinite;
+	display: inline-block;
+}

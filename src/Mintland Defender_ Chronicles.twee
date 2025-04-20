@@ -13,35 +13,23 @@ Mintland Defender: Chronicles
   "zoom": 1
 }
 
+:: Start {"position":"800,300","size":"100,100"}
+<<audio "theme" play loop>>
+!<p id="mid">Mintland Defender</p>
+<<timed 1s t8n>>!!<p id = "mid" style="color:red;">Chronicles</p><</timed>>
 
+
+<<timed 2s t8n>>!!!<p id ="mid" style="color:blue;"><<link "-Start-" "Chooser">><</link>></p><</timed>> 
+
+/* Break */
 :: Chooser {"position":"800,425","size":"100,100"}
 !<p id="mid">--Chapter--</p>
-|<<link "Descent into Silence">><</link>>|
-
-
-:: Start {"position":"800,300","size":"100,100"}
-<<audio "theme" play>>
-!<p id="mid">Mintland Defender</p>
-!!<p id = "mid">Chronicles</p>
-
-
-
-
-<p id ="mid"><<link "-Start-" "Chooser">><</link>></p>
-
+<table id="mid">
+  <tr>
+    <p id="mid"><<link "Descent into Silence" "DIS-01">><</link>></p>
+  </tr>
+</table>
 
 
 :: StoryInit {"position":"600,300","size":"100,100"}
 <<cacheaudio "theme" "https://github.com/Ncursor/twine-mintland/raw/refs/heads/main/%E3%81%AE%CE%BB.mp3">>
-
-
-:: StoryStylesheet [stylesheet]
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
-
-body {
-  font-family: "Jura", sans-serif;
-}
-
-#mid {
- text-align:center;
-}
