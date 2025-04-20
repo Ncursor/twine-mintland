@@ -16,8 +16,7 @@ Mintland Defender: Chronicles
 
 :: Chooser {"position":"800,425","size":"100,100"}
 !<p id="mid">--Chapter--</p>
-||
-||
+|<<link "Descent into Silence">><</link>>|
 
 
 :: Start {"position":"800,300","size":"100,100"}
