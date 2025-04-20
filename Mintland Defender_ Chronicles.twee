@@ -1,0 +1,45 @@
+:: StoryTitle
+Mintland Defender: Chronicles
+
+
+:: StoryData
+{
+  "ifid": "0CF3E06B-2436-4714-A6C1-23519CD0F002",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "Start",
+  "tag-colors": {
+  },
+  "zoom": 1
+}
+
+
+:: Chooser {"position":"800,425","size":"100,100"}
+
+
+
+:: Start {"position":"800,300","size":"100,100"}
+!<p id="mid">Mintland Defender</p>
+!!<p id = "mid">Chronicles</p>
+
+
+
+
+<p id ="mid">-[[Start|Chooser]]-</p>
+<<audio "theme" play>>
+
+
+:: StoryInit {"position":"600,300","size":"100,100"}
+<<cacheaudio "theme" "https://github.com/Ncursor/twine-mintland/raw/refs/heads/main/%E3%81%AE%CE%BB.mp3">>
+
+
+:: StoryStylesheet [stylesheet]
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+body {
+  font-family: "Jura", sans-serif;
+}
+
+#mid {
+ text-align:center;
+}
