@@ -15,12 +15,13 @@ Mintland Defender: Chronicles
 
 
 :: Chooser {"position":"800,425","size":"100,100"}
-!<p id="mid">--Chapter--</div>
+!<p id="mid">--Chapter--</p>
 ||
 ||
 
 
 :: Start {"position":"800,300","size":"100,100"}
+<<audio "theme" play>>
 !<p id="mid">Mintland Defender</p>
 !!<p id = "mid">Chronicles</p>
 
@@ -28,7 +29,7 @@ Mintland Defender: Chronicles
 
 
 <p id ="mid"><<link "-Start-" "Chooser">><</link>></p>
-<<audio "theme" play>>
+
 
 
 :: StoryInit {"position":"600,300","size":"100,100"}
