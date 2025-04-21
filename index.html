@@ -107,13 +107,17 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 	<!-- UUID://0CF3E06B-2436-4714-A6C1-23519CD0F002// --><tw-storydata name="Mintland Defender: Chronicles" startnode="2" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="0CF3E06B-2436-4714-A6C1-23519CD0F002" zoom="1" format="SugarCube" format-version="2.37.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
 
 body {
-  font-family: "Jura", sans-serif;
+	font-family: "Jura", sans-serif;
 }
 
 #mid {
- text-align: center;
- margin-left: auto;
- margin-right: auto;
+ 	text-align: center;
+ 	margin-left: auto;
+	margin-right: auto;
+}
+
+#redtext {
+	color:red;
 }
 
 @-webkit-keyframes shudder {
@@ -132,7 +136,27 @@ body {
 	-webkit-animation: shudder linear 0.1s 0s infinite;
 	animation: shudder linear 0.1s 0s infinite;
 	display: inline-block;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="DIS-01" tags="" position="800,475" size="100,100"></tw-passagedata><tw-passagedata pid="2" name="Start" tags="" position="800,300" size="100,100">&lt;&lt;audio &quot;theme&quot; play loop&gt;&gt;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">Setting.addHeader("Gameflow", "Changes how the gameplay is presented");
+Setting.addToggle("Autoskip",{
+    label: "Autoskip",
+    default: true
+});</script><tw-passagedata pid="1" name="DIS-01" tags="" position="800,475" size="100,100">&lt;&lt;masteraudio stop&gt;&gt;
+&lt;span id=&quot;dotdot&quot;&gt;.&lt;/span&gt;
+&lt;&lt;timed 2s&gt;&gt;
+    &lt;span id=&quot;redtext&quot;&gt;Connection established.&lt;/span&gt;
+&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 2s&gt;&gt;
+
+&lt;&lt;/timed&gt;&gt;
+/* Rendering Dots */
+&lt;&lt;done&gt;&gt;
+    &lt;&lt;timed 500ms&gt;&gt;
+    &lt;&lt;replace &quot;#dotdot&quot;&gt;&gt;..&lt;&lt;/replace&gt;&gt;
+    &lt;&lt;/timed&gt;&gt;
+    &lt;&lt;timed 1s&gt;&gt;
+    &lt;&lt;replace &quot;#dotdot&quot;&gt;&gt;...&lt;&lt;/replace&gt;&gt;
+    &lt;&lt;/timed&gt;&gt;
+&lt;&lt;/done&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Start" tags="" position="800,300" size="100,100">&lt;&lt;audio &quot;theme&quot; play loop&gt;&gt;
 !&lt;p id=&quot;mid&quot;&gt;Mintland Defender&lt;/p&gt;
 &lt;&lt;timed 1s t8n&gt;&gt;!!&lt;p id = &quot;mid&quot; style=&quot;color:red;&quot;&gt;Chronicles&lt;/p&gt;&lt;&lt;/timed&gt;&gt;
 

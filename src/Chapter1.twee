@@ -1,2 +1,19 @@
 /* Chapter 1 */
 :: DIS-01 {"position":"800,475","size":"100,100"}
+<<masteraudio stop>>
+<span id="dotdot">.</span>
+<<timed 2s>>
+    <span id="redtext">Connection established.</span>
+<</timed>>
+<<timed 2s>>
+
+<</timed>>
+/* Rendering Dots */
+<<done>>
+    <<timed 500ms>>
+    <<replace "#dotdot">>..<</replace>>
+    <</timed>>
+    <<timed 1s>>
+    <<replace "#dotdot">>...<</replace>>
+    <</timed>>
+<</done>>

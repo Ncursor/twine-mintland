@@ -1,0 +1,6 @@
+:: UserScript[script]
+Setting.addHeader("Gameflow", "Changes how the gameplay is presented");
+Setting.addToggle("Autoskip",{
+    label: "Autoskip",
+    default: true
+});
