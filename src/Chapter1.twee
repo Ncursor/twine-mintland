@@ -5,8 +5,8 @@
 <<timed 2s>>
     <span id="redtext">Connection established.</span>
 <</timed>>
-<<timed 2s>>
-
+<<timed 4s>>
+    <<goto "DIS-02">>
 <</timed>>
 /* Rendering Dots */
 <<done>>
@@ -17,3 +17,5 @@
     <<replace "#dotdot">>...<</replace>>
     <</timed>>
 <</done>>
+
+:: DIS-02
