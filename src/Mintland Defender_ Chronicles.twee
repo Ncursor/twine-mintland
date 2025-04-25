@@ -23,6 +23,8 @@ Mintland Defender
 
 <<timed 2s t8n>>!!!<p id ="mid" style="color:blue;"><<link "-Start-" "Chooser">><</link>></p><</timed>> 
 
+:: 
+
 /* Break */
 :: Chooser {"position":"800,425","size":"100,100"}
 !<p id="mid">--Chapter--</p>
