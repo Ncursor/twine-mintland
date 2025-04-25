@@ -19,14 +19,14 @@
 <</done>>
 
 :: DIS-02
-<div style="display: flex;"> 
+<div style="display: flex; size: 100%"> 
     /* Image */
     <div> 
         <img>
     </div>
     /* Subtitle */
-    <div>
-        <p>
+    <div id="mid">
+        <p id="mid bot">
             Welcome aboard, captain...
         </p>
     </div>
