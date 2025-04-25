@@ -19,3 +19,15 @@
 <</done>>
 
 :: DIS-02
+<div style="display: flex;"> 
+    /* Image */
+    <div> 
+        <img>
+    </div>
+    /* Subtitle */
+    <div>
+        <p>
+            Welcome aboard, captain...
+        </p>
+    </div>
+</div>

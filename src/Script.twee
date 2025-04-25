@@ -4,3 +4,4 @@ Setting.addToggle("Autoskip",{
     label: "Autoskip",
     default: true
 });
+importStyles()
