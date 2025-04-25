@@ -4,4 +4,4 @@ Setting.addToggle("Autoskip",{
     label: "Autoskip",
     default: true
 });
-importStyles()
+importStyles("https://raw.githubusercontent.com/Ncursor/twine-mintland/refs/heads/main/src/Stylesheet.css")
